@@ -10,8 +10,7 @@ export class LoginComponent {
 
   constructor(private afauth: AngularFireAuth ) { }
    
-  login = () => {
-    this
+  login = () => this
     .afauth.auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider());
-  }
+
 }
